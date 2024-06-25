@@ -11,3 +11,18 @@ console.log(calcularImpuestos(40, 10000)) // 4000
 console.log(calcularImpuestos(17, 5000)) // 0
 console.log(calcularImpuestos(30, 500)) // 0 */
 
+
+let calcularImpuestos = []
+let array = prompt ('Favor ingrese su edad')
+calcularImpuestos.push(array)
+let array2 = prompt ('Favor ingrese sus ingreso ')
+calcularImpuestos.push(array2)
+
+
+
+if (calcularImpuestos[0] >= 18 && calcularImpuestos [1] >= 1000){
+    calcularImpuestos[1] = calcularImpuestos[1]*0.40;
+    document.write ("Debe retornar: ",calcularImpuestos[1])
+}
+else {document.write ("Debe retornar: $0")
+}
